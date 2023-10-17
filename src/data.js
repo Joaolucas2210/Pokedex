@@ -32,17 +32,7 @@ const pokemonList = [
     image: 'https://cdn2.bulbagarden.net/upload/8/83/Spr_5b_010.png',
     moreInfo: 'https://bulbapedia.bulbagarden.net/wiki/Caterpie_(Pok%C3%A9mon)',
   },
-  {
-    id: 23,
-    name: 'Ekans',
-    type: 'Poison',
-    averageWeight: {
-      value: 6.9,
-      measurementUnit: 'kg',
-    },
-    image: 'https://cdn2.bulbagarden.net/upload/1/18/Spr_5b_023.png',
-    moreInfo: 'https://bulbapedia.bulbagarden.net/wiki/Ekans_(Pok%C3%A9mon)',
-  },
+
   {
     id: 65,
     name: 'Alakazam',

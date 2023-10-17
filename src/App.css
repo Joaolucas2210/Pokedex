@@ -1,3 +1,109 @@
-.App {
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid') ;
+
+:root {
+
+  --text-color: rgb(218, 218, 218);
+
+  --pokemon-font: 'Pokemon Solid';
+
+  --red-color: rgb(180, 0, 0);
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body > div {
+  align-items: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: monospace, sans-serif;
+  font-size: 2rem;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  backdrop-filter: blur(3px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
   text-align: center;
+  width: 90%;
+}
+
+h1 {
+  color: var(--red-color);
+  font-family: var(--pokemon-font), sans-serif;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+  -webkit-text-stroke: 0.3rem black;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-evenly;
+  max-height: calc(70vh - 8.4rem);
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+}
+
+ul > li {
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  min-width: 32rem;
+  padding: 1rem 2rem;
+  width: 30%;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red-color);
+  border: 0.05rem solid black;
+  border-radius: 0.5rem;
+}
+
+footer {
+  align-items: center;
+  background-color: var(--red-color);
+  bottom: 0;
+  color: var(--text-color);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
